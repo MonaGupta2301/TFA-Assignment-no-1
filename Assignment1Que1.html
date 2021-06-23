@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!-- * * * * * * *  Assignment Number 1 * * * * * * *
+QUE1. What is HTML? Explain the following html elements using an appropriate example Other Than
+      Covered in class: <table>,<ol>&<ul>,<form>,<input>,<label>and self-Ending. 
+ 
+Theory :
+
+#   What is HTML ?
+ans :
+    HTML is not a Programming Language it is the Markup Language, through which
+    you can design Web Page or Website or Web Applications.
+    
+    HTML Stands for HYPERTEXT MARKUP LANGUAGE.
+    
+    where,
+    Hypertext : Hypertext in nothing but the text that links to another information.
+                It is the Machine Readable Text.
+        
+    Markup Language :Markup Language is the kind of set of instructions which is use
+                     to design , to process and to present the data and information or text.
+                    
+    " Hypertext is the MACHINE READABLE TEXT and markup language is the SPECIFIC FORMATE.
+      So that HTML is called as HYPER TEXT MARKUP LANGUAGE because, it allows users to Organize 
+      and implement the appearence of data or text on Internet."
+
+#   Explain <table>,<ol>&<ul>,<form>,<input>,<label>and self-Ending tags or Inline Tages.
+
+    i) <table> : <Table> is the instruction of html or it the block level element .
+                 which is use to arrange the data int the form of rows and columns.
+                 to arrage the data of table we have more tags such as: <thead> Which is used to
+                 set data of table head with the help of <td></td> table data element.<tbody> Which is
+                 used to set data of table head with the help of <td></td> table data element.
+       
+       Attribute of <table>
+       
+        1) Border : It is used to specify the border of the table. the value of border attribute 
+                    is like 1,2,3,4.... it is always in integer.
+        
+        2) bordercolor : It is use to specify backgrounf colour to the border. its value can be 
+                        colour name or colour hexadecimal value.
+
+        3) cell Spacing : It is used to specify the space between table cells. the value of cell
+                          border is integer.
+
+        4) cell Padding : It is used to specify the space between cell border and content withing the cell.
+                          The value of cell border is integer.
+                 
+    ii) <ol> & <ul>
+         
+        1)<ol> : <ol> Ordered List is the instruction of html or it the block element. Which Specify the
+                 Collection of related data item,that have special order or Sequence.this list is created
+                 by html<ol> tag.
+                 The default List Type is "1" and incremented by one.
+                 <ol> consist of tag which called as <li> which is used to display the list items.
+        
+                 Attribute of <ol> 
+                 a) type : It is use to specify the type of ordered list.The default List Type is "1" and 
+                    incremented by one.
+                 eg:  <ol type="1">
+                      <ol type="I">
+                      <ol type="i">
+                      <ol type="A">
+                      <ol type="a"> 
+        
+        2)<ul> : <ul> Unordered List is the instruction of html or it the block element. Which Specify the
+                 Collection of related data item,that have no special order or Sequence.this list is created
+                 by html<ul> tag.
+                 The default List is marked with bullet i.e Type="disc".
+                 <ul> consist of tag which called as <li> which is used to display the list items.
+
+                 Attribute of <ol>                      
+                a) type : It is use to specify the type of unordered list.The default List Type is "disc".        
+
+                 eg: <ul type="square">
+                     <ul type="circle">
+                     <ul type="disc">
+
+        3)<from> : <form> is the instruction of html or block element which is contains the different contols
+                   which is GUI Based, for eg : checkBox,Radio button,button,TextBox,TextArea,Calender,etc.
+            
+        4)<input> : It is the Instruction of HTML or inline element which is used for the input purpose or
+                    which is used to extract the value from the user from different typed of contols such as
+                    TextBox,Range Calender etc, by Specifying the type Attribute.
+
+                    Attribute of <input>
+                    a) Type : It is used to specify in which type you need an input ,it may be in the form of
+                              email,password,string,number,range,date and many more.
+                    for eg : <input type="Text">
+                             <input type="Password">
+                             <input type="Email">
+                             <input type="Range">
+                             <input type="Date">
+        
+        5)<label> : It is the Instruction of html or inline element which is used to provide the Information 
+                    about Input controls such as <textarea>,<button>etc.
+ 
+                    Attribute of <label>
+                    a) for : It is used to specify the text Through which that label will be identify uniquely .
+                    
+                    for eg : <label for="F_Name">First Name</label>
+                             <label for="M_Name">Middle Name</label>
+                             <label for="L_Name">Last Name</label>
+                             <label for="E_Mail">Email Name</label>
+                             <label for="Password">Password Name</label>
+        
+        6)Self-Ending : Self-ending tags are those which don't need any closing tag or Companion tag.
+                        its not consist of any type of content and its never brings to the new line.
+                        but in many cases like(<i>,<u>,<b>,<spam>)it consist of content but it didn't jumps
+                        on new line so these are also the self ending tags.
+                        Self Ending tags are also called as Inline elements.
+
+                        for eg: <i>,<u>,<b>,<spam>,<hr>,<br>,<q>,etc.
+
+
+        Now let'us Understand it with help of following demo code.
+-->
+<html>
+    <head>
+        <title>
+            Basics of HTML
+        </title>
+    </head>
+    <body>
+        <!-- let's have a look on table tag -->
+        <h2>Table</h2><hr>
+        <p>let's create the student Percentage table</p>
+        <table border="2">
+             
+                <!--this will create the heading of the table in bold-->
+            <tbody>
+                <tr>
+                    <th>Sr_No</th> 
+                    <th>F_Name</th>    
+                    <th>L_Name</th>    
+                    <th>Percentage</th>    
+                    <th>Result</th>    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Minal</td>
+                    <td>Sharma</td>
+                    <td>67%</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Sita</td>
+                    <td>Raichura</td>
+                    <td>72%</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Geeta</td>
+                    <td>Pusadkar</td>
+                    <td>58%</td>
+                    <td>Pass</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Ram</td>
+                    <td>Verma</td>
+                    <td>30%</td>
+                    <td>Fail</td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Shyaam</td>
+                    <td>Sharma</td>
+                    <td>35%</td>
+                    <td>Fail</td>
+                </tr>
+            </tbody>
+        </table>
+         <hr>   
+         <h3> Ordered List And Unordered List</h3>
+         <hr>
+         <p> Let's have a look on ol tag.</p>
+         <p> let's create ordered list of friuts</p>
+         <ol type="i">
+            <li>Mango</li>
+            <li>Banana</li>
+            <li>Stawberry</li>
+            <li>Papaya</li>
+            <li>FactFruit</li>
+            <li>Apple</li>
+            <li>Watermelon</li>
+            <li>lemon</li>
+            <li>Orange</li>
+            <li>Grapes</li>
+            <li>Chiku</li>
+         </ol>
+
+         <hr>
+         <p> Let's have a look on ul tag.</p>
+         <p> let's create Unordered list of Grocery</p>
+         <ul type="Square">
+            <li>Sugar</li>
+            <li>Jagery</li>
+            <li>Wheat</li>
+            <li>Rice</li>
+            <li>Hair Oil</li>
+            <li>Milk</li>
+            <li>butter</li>
+            <li>cheeze</li>
+            <li>Termaric</li>
+         </ul>
+         <hr>
+         <h3>Form ,Input and Label </h3>
+         <hr>
+         <p>let's design the student deatils form</p>
+         <hr>
+         <h4><u>Student Detail</u></h4>
+         <form >
+             <div>
+                 <label for="Student_Reg"> Enter Student Registration No :</label>
+                <input type="number">
+             </div><br>
+
+             <div>
+                <label for="Student_Fname"> Enter Student First Name :</label>
+               <input type="text">
+            </div><br>
+
+            <div>
+                <label for="Student_Lname"> Enter Student Last name :</label>
+                <input type="text">
+            </div><br>
+
+            <div>
+                <label for="Student_Email"> Enter Email :</label>
+                <input type="email">
+            </div><br>
+
+            <div>
+                <label for="Student_Pass"> Enter Student E_Mail Password :</label>
+               <input type="password">
+            </div><br>
+
+            <div>
+                <label for="Student_per"> Enter Student Percent :</label>
+               <input type="number">
+            </div><br>
+
+            <button >submit</button>
+            <button >cancel</button>
+         </form>
+         <hr>
+         <h3>Self Endind or inline elements</h3>
+         <hr>
+         <p>The polling for the <b>presidential</b> election began on 15 July 2002 in Parliament and the 
+            state assemblies, with the media claiming that the election was a one-sided affair and
+            Kalam's victory was a foregone conclusion; the count was held on 18 July.[46] Kalam became
+            the 11th president of <i>the Republic of India in an easy victory,</i>[47] and moved into the 
+            Rashtrapati Bhavan after he was sworn in on 25 July.[48] Kalam was the third President 
+            of India to have been honoured with a Bharat Ratna, India's highest civilian honour, 
+            before becoming the President <u>Sarvepalli Radhakrishnan</u> (1954) and Zakir Hussain (1963)
+            were the earlier recipients of Bharat Ratna who later became <q> President of India</q>.[49] <br>
+            He was also the first scientist and <spam> the first bachelor to occupy Rashtrapati Bhawan</spam>.</p>
+    </body>
+</html>
